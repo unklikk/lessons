@@ -1,6 +1,6 @@
 let items = [
     { name: "книга", price: 300 },
-    { name: "тетрадь", price: 50 },
+    { name: "тетрадь", price: 100 },
     { name: "ручка", price: 20 }
 ];
 
