@@ -12,7 +12,7 @@ function getProductPrice(productName) {
     }
 }
 
-for (let food = 0; food < shoppingBasket.length; food++) {
+for (let food = shoppingBasket.length; food <= 0; food--) {
     let price = getProductPrice(shoppingBasket[food]);
     totalCost += price;
     if (price > 40) {
