@@ -7,16 +7,20 @@ let students = [
 let goodStudents = 0;
 
 function isGoodStudent(grade) {
-    return grade >= 4
+    if (grade >= 4) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 for (let i = 0; i < students.length; i++) {
-    if (isGoodStudent(student[i].grade)) {
+    if (isGoodStudent(students[i].grade)) {
         console.log(`${students[i].name}: хорошист`);
-        goodStudents = goodStudents + 1;
+        goodStudents++;
     } else {
         console.log(`${students[i].name}: не хорошист`);
     }
 }
 
-console.log(`Хороших студентов: ${goodStdents}`));
+console.log(`Хороших студентов: ${goodStudents}`);
