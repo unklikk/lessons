@@ -10,9 +10,9 @@ let fruits = [
     return fruit.count;
   }
   
-  for (let i = 0; i < fruits.length i++) {
-    totalCount = totalCount + getCount(fruits[i]);
-    console.log(`${Fruits[i].name}: ${fruits[i].count}`);
+  for (let i = 0; i < fruits.length; i++) {
+    totalCount += getCount(fruits[i]);
+    console.log(`${fruits[i].name}: ${fruits[i].count}`);
   }
   
-  console.log(`Общее количество: ${totalCount}`)
+  console.log (`Общее количество: ${totalCount}`);

@@ -6,17 +6,18 @@ let events = [
   
   let eveningEvents = 0;
   
-  function isEvening(time) {
-    return time >= 18;
+  function isEvening(times) {
+    return times >= 18;
   }
   
-  events,forEach((event) {
-    if (isEvening(event.time) {
+  events.forEach((event) => {
+    if (isEvening(event.time)) {
       console.log(`${event.event}: вечернее событие`);
-      eveningEvent = eveningEvents + 1
+      eveningEvents++;
     } else {
       console.log(`${event.event}: дневное событие`);
     }
   });
   
-  console.log(`Вечерних событий: ${eveningEvents}`;);
+  console.log(`Вечерних событий: ${eveningEvents}`);
+  
